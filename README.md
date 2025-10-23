@@ -1,11 +1,5 @@
 # Free Translate API
 
-## ⚠️ Important Notice
-
-The website hosted on PythonAnywhere is for demonstration purposes only. This is not a public API service and does not support external API hosting.
-
-If you want to use this project as an API, please clone the repository and host it on your own server or cloud platform.
-
 ## 📖 Usage Guide
 
 With the Free Translate API, you can translate words or sentences into the language you want. There are 2 ways to do this.
@@ -22,7 +16,7 @@ With the Free Translate API, you can translate words or sentences into the langu
 
 > Use the `/languages` endpoint to see which languages are supported.
 
-`/translate?sl=en&dl=tr&text=example` or `/translate?dl=tr&text=example`
+`/get-translate?sl=en&dl=tr&text=example` or `/get-translate?dl=tr&text=example`
 ```json
 {
   "source-language": "en",
@@ -146,7 +140,7 @@ With the Free Translate API, you can translate words or sentences into the langu
 }
 ```
 
-`/translate?sl=en&dl=tr&text=hello%20world` or `/translate?dl=tr&text=hello%20world`
+`/get-translate?sl=en&dl=tr&text=hello%20world` or `/get-translate?dl=tr&text=hello%20world`
 ```json
 {
   "source-language": "en",
