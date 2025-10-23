@@ -22,6 +22,6 @@ handler404 = "index.views.page_not_found_view"
 
 urlpatterns = [
     path("", Index.as_view(), name="index"),
-    path("translate", Translate.as_view(), name="translate"),
+    path("get-translate", Translate.as_view(), name="get-translate"),
     path("languages", Languages.as_view(), name="languages"),
 ]

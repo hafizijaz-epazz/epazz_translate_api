@@ -29,6 +29,9 @@ SECRET_KEY = os.getenv("SECRET_KEY")
 DEBUG = os.getenv("DEBUG", False)
 
 ALLOWED_HOSTS = [os.getenv("ALLOWED_HOSTS")]
+# core/settings.py
+#ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS", "localhost").split(",")
+
 
 
 # Application definition
